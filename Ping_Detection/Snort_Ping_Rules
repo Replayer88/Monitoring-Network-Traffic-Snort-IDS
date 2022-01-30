@@ -1,0 +1,1 @@
+alert icmp [SOURCE.IP.ADDRESS] any -> [DESTINATION.IP.ADDRESS] any (msg:"ICMP test";sid:2000000;)
