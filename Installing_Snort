@@ -1,1 +1,1 @@
-# How to install Snort
+Edit the file */etc/apt/sources.list* with **sudo gedit /etc/apt/sources.list**, and add this line to the end: **deb http://deb.debian.org/debian buster main**
