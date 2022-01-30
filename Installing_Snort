@@ -1,4 +1,4 @@
-# Edit the file sources.list with and add this line to the end: 
+# Edit the file "sources.list" and add this line to the end: 
 
 sudo gedit /etc/apt/sources.list
 deb http://deb.debian.org/debian buster main
