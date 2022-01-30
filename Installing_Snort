@@ -1,5 +1,6 @@
-# Edit the file /etc/apt/sources.list with and add this line to the end: 
+# Edit the file sources.list with and add this line to the end: 
 
+sudo gedit /etc/apt/sources.list
 deb http://deb.debian.org/debian buster main
 
 # Update package information
