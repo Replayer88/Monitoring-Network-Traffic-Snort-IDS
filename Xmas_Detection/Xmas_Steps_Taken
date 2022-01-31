@@ -1,9 +1,7 @@
 # Move into the directory with all of the Snort rules already established
-
 cd /etc/snort/rules
 
 # Check to see the rules created to detect Xmas scans
-
 grep -ri xmas
 
 # You should see two rules: 
@@ -12,12 +10,10 @@ grep -ri xmas
 
 # Send out the alert onto the console by using the snort.conf configuration file 
 # Logs will be stored in the logs directory while scanning traffic on the network interface
-
 sudo snort -A console -c /etc/snort/snort.conf -l logs -i eth1
 
 # Create the Xmas scan with Nmap in a different terminal
 # In the pcap file, the target IP address is 192.168.187.128
-
 sudo nmap -sX [TARGET.IP.ADDRESS]
 
 # We can see the detection in the terminal window running the Snort command
