@@ -1,1 +1,8 @@
-# Having created the rules file, 
+# Having created the rules file, execute Snort
+
+sudo snort -k none -l logs -c snort.rules -r ping_nmap.pcapng
+
+# In this pcap, a source IP of 192.168.187.128 and destination IP of 192.168.187.131 should result in 17 alerts
+
+# Confirm with logs
+cat logs/alert
