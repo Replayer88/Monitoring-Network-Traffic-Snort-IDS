@@ -7,7 +7,7 @@ ftp [TARGET.IP.ADDRESS]
 
 # You should then see "FTP Login Attempt Failed" alerts in the terminal window running the Snort command
 
-# If you need FTP installed on your Kali Linux to carry out the project
+# If you need FTP installed on your Kali Linux to carry out the project:
 # Install vsftpd
 sudo apt-get install vsftpd
 
