@@ -1,1 +1,7 @@
+# Outline of Snort rules: [action][protocol][sourceIP][sourceport] -> [destIP][destport] ( [Rule options] )
 
+# Create a rules file named snort.rules in Kali Linux and edit
+sudo gedit snort.rules
+
+# Snort rule to detect SSH attempts through port 22. The msg can be changed to say anything.
+alert tcp [SOURCE.IP.ADDRESS] any -> [DESTINATION.IP.ADDRESS] 22 (msg:”SSH Attempt Made”;sid:300000000;)
