@@ -1,1 +1,8 @@
+# Edit the rules file  
 
+sudo gedit /etc/snort/rules/local.rules
+
+# Input this rule to see all FTP login attempts made on your machine from port 21
+# The source IP used was 192.168.187.0/24 and the destination IP used was "any"
+
+alert tcp [SOURCE.IP.ADDRESS] 21 -> [DESTINATION.IP.ADDRESS] any (msg:”FTP Login Attempt Failed”; content:”Login incorrect”; sid:1000003;)
