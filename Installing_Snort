@@ -1,14 +1,11 @@
 # Edit the file "sources.list" and add this line to the end: 
-
 sudo gedit /etc/apt/sources.list
 deb http://deb.debian.org/debian buster main
 
 # Update package information
-
 sudo apt update -y
 
 # Install Snort in Kali
-
 sudo apt install snort
 
 # Enter the interface on which Snort should listen on
@@ -16,9 +13,7 @@ sudo apt install snort
 # Enter the address range for the local network
 
 # Start snort
-
 sudo /etc/init.d/snort start
 
 # Edit the snort.conf file where it says "ipvar HOME_NET" and enter your address range
-
 sudo gedit /etc/snort/snort.conf
