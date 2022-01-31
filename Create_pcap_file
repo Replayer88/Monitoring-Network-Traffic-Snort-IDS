@@ -1,10 +1,8 @@
 # Open up Wireshark and start capturing packets
 # Run a ping scan on Metasploitable2’s IP address
-
 ping [TARGET.IP.ADDRESS]
 
 # Run an Nmap scan 
-
 nmap -A [TARGET.IP.ADDRESS]
 
 # Save the .pcap file
