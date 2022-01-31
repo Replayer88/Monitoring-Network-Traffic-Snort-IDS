@@ -1,7 +1,10 @@
 # Outline of Snort rules: [action][protocol][sourceIP][sourceport] -> [destIP][destport] ( [Rule options] )
 
 # Create a rules file named snort.rules in Kali Linux and edit
+
 sudo gedit snort.rules
 
 # Snort rule to detect pings. The msg can be changed to say anything.
+# With this pcap, the rules file set with a source IP of 192.168.187.128 and destination IP of 192.168.187.131 should result in 17 alerts
+
 alert icmp [SOURCE.IP.ADDRESS] any -> [DESTINATION.IP.ADDRESS] any (msg:"ICMP test";sid:2000000;)
