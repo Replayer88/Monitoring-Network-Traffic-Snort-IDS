@@ -1,6 +1,5 @@
 # Execute Snort by turning off the entire checksum verification subsystem while using the snort.rules file and the pcap file 
 # Alerts will be stored in the logs directory
-
 sudo snort -k none -l logs -c snort.rules -r ping_nmap.pcapng
 
 # With this pcap, the rules file set with a source IP of 192.168.187.128 and destination IP of 192.168.187.131 should result in 17 alerts
