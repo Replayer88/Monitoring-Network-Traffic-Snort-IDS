@@ -1,41 +1,32 @@
 # Send out the alert onto the console by using the snort.conf configuration file 
 # Logs will be stored in the logs directory while scanning traffic on the network interface
-
 sudo snort -A console -q -c /etc/snort/snort.conf -l logs -i eth1
 
 # On another terminal, execute the command with the wrong password
-
 ftp [TARGET.IP.ADDRESS]
 
 # You should then see "FTP Login Attempt Failed" alerts in the terminal window running the Snort command
 
 # If you need FTP installed on your Kali Linux to carry out the project
 # Install vsftpd
-
 sudo apt-get install vsftpd
 
 # Start the FTP server
-
 service vsftpd start
 
 # Access file /etc/vsftpd.conf
-
 sudo gedit /etc/vsftpd.conf
 
 # Configure anonymous_enable to YES
-
 anonymous_enable=YES
 
 # Stop and restart FTP service
-
 service vsftpd stop
 service vsftpd start
 
 # Once you are done with the project
 # Stop FTP service
-
 sudo service vsftpd stop
 
 # Remove vsftpd
-
 sudo apt-get remove vsftpd
