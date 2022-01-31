@@ -10,7 +10,7 @@ grep -ri xmas
 # scan.rules:alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"SCAN XMAS"; flow:stateless; flags:SRAFPU,12; reference:arachnids,144; classtype:attempted-recon; sid:625; rev:7;)
 # scan.rules:alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"SCAN nmap XMAS"; flow:stateless; flags:FPU,12; reference:arachnids,30; classtype:attempted-recon; sid:1228; rev:7;)
 
-# To send out the alert onto the console by using the snort.conf configuration file 
+# Send out the alert onto the console by using the snort.conf configuration file 
 # Logs will be stored in the logs directory while scanning traffic on the network interface
 
 sudo snort -A console -c /etc/snort/snort.conf -l logs -i eth1
