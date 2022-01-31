@@ -4,7 +4,6 @@
 sudo snort -A console -q -c /etc/snort/snort.conf -l logs -i eth1
 
 # On another terminal, execute the command with the wrong password
-# The target IP address used was 192.168.187.128.
 
 ftp [TARGET.IP.ADDRESS]
 
