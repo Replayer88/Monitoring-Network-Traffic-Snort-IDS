@@ -8,8 +8,8 @@ sudo apt update -y
 # Install Snort in Kali
 sudo apt install snort
 
+# You will be presented with multiple screens
 # Enter the interface on which Snort should listen on
-
 # Enter the address range for the local network
 
 # Start snort
