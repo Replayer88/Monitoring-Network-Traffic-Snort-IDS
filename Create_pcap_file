@@ -8,3 +8,6 @@ ping [TARGET.IP.ADDRESS]
 nmap -A [TARGET.IP.ADDRESS]
 
 # Save the .pcap file
+
+# Go to the directory you will be working in to create a logs file to store logs
+mkdir logs
