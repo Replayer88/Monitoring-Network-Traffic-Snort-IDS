@@ -31,3 +31,12 @@ anonymous_enable=YES
 
 service vsftpd stop
 service vsftpd start
+
+# Once you are done with the project
+# Stop FTP service
+
+sudo service vsftpd stop
+
+# Remove vsftpd
+
+sudo apt-get remove vsftpd
