@@ -19,3 +19,6 @@ sudo snort -A console -c /etc/snort/snort.conf -l logs -i eth1
 # In the pcap file, the target IP address is 192.168.187.128
 
 sudo nmap -sX [TARGET.IP.ADDRESS]
+
+# We can see the detection in the terminal window running the Snort command
+# You should see "SCAN nmap XMAS" on the alerts
