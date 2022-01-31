@@ -1,3 +1,5 @@
+# Outline of Snort rules: [action][protocol][sourceIP][sourceport] -> [destIP][destport] ( [Rule options] )
+
 # Edit the rules file  
 sudo gedit /etc/snort/rules/local.rules
 
