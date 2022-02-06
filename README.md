@@ -1,4 +1,4 @@
-# Snort-IDS-Project
+# Monitoring-Network-Traffic-Snort-IDS
 Designing four different Snort scans to detect ping, SSH, Xmas scans, and FTP failed login attempts.
 
 Tools utilized: Kali Linux, Metasploitable2, Wireshark, Nmap
